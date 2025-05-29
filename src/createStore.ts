@@ -2,7 +2,7 @@
 
 import { Reducer, SetStateAction, useCallback } from 'react';
 
-import create from 'zustand';
+import { create } from 'zustand';
 import { redux } from 'zustand/middleware';
 
 type ExtractState<S> = S extends {
@@ -52,7 +52,7 @@ export const createStore = <State extends object, Action extends { type: unknown
 ): Store<State, Action> => {
   if (enhancer) return enhancer(createStore)(reducer, initialState);
 
-  const useStore = create(redux(reducer, initialState));
+  const useStore = create(redux(reducer as any, initialState));
 
   type BoundState = ExtractState<typeof useStore>;
   type StateKeys = keyof BoundState;

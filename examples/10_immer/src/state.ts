@@ -1,6 +1,6 @@
 import { produce } from 'immer';
 
-import { createStore } from 'react-hooks-global-state';
+import { createStore } from 'react-hooks-global-state-next';
 
 type Action =
   | { type: 'increment' }

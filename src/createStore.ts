@@ -32,7 +32,7 @@ const updateValue = <Value>(oldValue: Value, newValue: SetStateAction<Value>) =>
  * A store works somewhat similarly to Redux, but not the same.
  *
  * @example
- * import { createStore } from 'react-hooks-global-state';
+ * import { createStore } from 'react-hooks-global-state-next';
  *
  * const initialState = { count: 0 };
  * const reducer = ...;

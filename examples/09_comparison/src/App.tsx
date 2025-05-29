@@ -22,7 +22,7 @@ const App = () => (
         </Provider>
       </div>
       <div>
-        <h1>react-hooks-global-state</h1>
+        <h1>react-hooks-global-state-next</h1>
         <h2>Counter</h2>
         <Counter />
         <Counter />

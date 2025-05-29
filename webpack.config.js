@@ -28,7 +28,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
-      'react-hooks-global-state': `${__dirname}/src`,
+      'react-hooks-global-state-next': `${__dirname}/src`,
     },
   },
   devServer: {

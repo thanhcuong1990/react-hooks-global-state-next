@@ -1,4 +1,4 @@
-import { createGlobalState } from 'react-hooks-global-state';
+import { createGlobalState } from 'react-hooks-global-state-next';
 
 const { setGlobalState, useGlobalState } = createGlobalState({
   errorMessage: '',

@@ -1,5 +1,5 @@
 {
-  "name": "react-hooks-global-state-example",
+  "name": "react-hooks-global-state-next-example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,7 @@
     "immer": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-hooks-global-state": "latest",
+    "react-hooks-global-state-next": "latest",
     "react-scripts": "latest",
     "typescript": "latest"
   },

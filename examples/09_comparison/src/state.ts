@@ -1,4 +1,4 @@
-import { createStore } from 'react-hooks-global-state';
+import { createStore } from 'react-hooks-global-state-next';
 
 import { initialState, reducer } from './common';
 

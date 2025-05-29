@@ -1,11 +1,11 @@
 {
-  "name": "react-hooks-global-state",
+  "name": "react-hooks-global-state-next",
   "description": "Simple global state for React with Hooks API without Context API",
   "version": "2.2.0",
-  "author": "Daishi Kato",
+  "author": "Cuong Lam <thanhcuong1990@gmail.com> (https://github.com/thanhcuong1990)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dai-shi/react-hooks-global-state.git"
+    "url": "https://github.com/thanhcuong1990/react-hooks-global-state-next.git"
   },
   "source": "./src/index.ts",
   "main": "./dist/index.umd.js",

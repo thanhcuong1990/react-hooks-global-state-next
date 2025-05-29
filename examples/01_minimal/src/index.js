@@ -1,7 +1,7 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { createGlobalState } from 'react-hooks-global-state';
+import { createGlobalState } from 'react-hooks-global-state-next';
 
 const initialState = {
   count: 0,

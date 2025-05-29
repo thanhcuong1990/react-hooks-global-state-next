@@ -1,7 +1,7 @@
 import { Dispatch } from 'react';
 import { applyMiddleware } from 'redux';
 
-import { createStore } from 'react-hooks-global-state';
+import { createStore } from 'react-hooks-global-state-next';
 
 type State = {
   count: number;

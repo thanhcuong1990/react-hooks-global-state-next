@@ -24,7 +24,7 @@ const updateValue = <Value>(oldValue: Value, newValue: SetStateAction<Value>) =>
  * - `subscribe`: a function that subscribes to state changes
  *
  * @example
- * import { createGlobalState } from 'react-hooks-global-state';
+ * import { createGlobalState } from 'react-hooks-global-state-next';
  *
  * const { useGlobalState } = createGlobalState({ count: 0 });
  *

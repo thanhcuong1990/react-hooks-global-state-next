@@ -1,14 +1,9 @@
-This project is no longer maintained.
-Please directly use [Zustand](https://github.com/pmndrs/zustand).
+# react-hooks-global-state-next
 
----
+**Note: This is a community-maintained fork of the original `react-hooks-global-state` package, which is no longer maintained. This version includes updated dependencies and continued support.**
 
-# react-hooks-global-state
-
-[![CI](https://img.shields.io/github/actions/workflow/status/dai-shi/react-hooks-global-state/ci.yml?branch=main)](https://github.com/dai-shi/react-hooks-global-state/actions?query=workflow%3ACI)
-[![npm](https://img.shields.io/npm/v/react-hooks-global-state)](https://www.npmjs.com/package/react-hooks-global-state)
-[![size](https://img.shields.io/bundlephobia/minzip/react-hooks-global-state)](https://bundlephobia.com/result?p=react-hooks-global-state)
-[![discord](https://img.shields.io/discord/627656437971288081)](https://discord.gg/MrQdmzd)
+[![npm](https://img.shields.io/npm/v/react-hooks-global-state-next)](https://www.npmjs.com/package/react-hooks-global-state-next)
+[![size](https://img.shields.io/bundlephobia/minzip/react-hooks-global-state-next)](https://bundlephobia.com/result?p=react-hooks-global-state-next)
 
 Simple global state for React with Hooks API without Context API
 
@@ -27,7 +22,7 @@ It has following characteristics.
 ## Install
 
 ```bash
-npm install react-hooks-global-state
+npm install react-hooks-global-state-next
 ```
 
 ## Usage
@@ -36,7 +31,7 @@ npm install react-hooks-global-state
 
 ```javascript
 import React from 'react';
-import { createGlobalState } from 'react-hooks-global-state';
+import { createGlobalState } from 'react-hooks-global-state-next';
 
 const initialState = { count: 0 };
 const { useGlobalState } = createGlobalState(initialState);
@@ -66,7 +61,7 @@ const App = () => (
 
 ```javascript
 import React from 'react';
-import { createStore } from 'react-hooks-global-state';
+import { createStore } from 'react-hooks-global-state-next';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -119,7 +114,7 @@ It returns a set of functions
 #### Examples
 
 ```javascript
-import { createGlobalState } from 'react-hooks-global-state';
+import { createGlobalState } from 'react-hooks-global-state-next';
 
 const { useGlobalState } = createGlobalState({ count: 0 });
 
@@ -150,7 +145,7 @@ A store works somewhat similarly to Redux, but not the same.
 #### Examples
 
 ```javascript
-import { createStore } from 'react-hooks-global-state';
+import { createStore } from 'react-hooks-global-state-next';
 
 const initialState = { count: 0 };
 const reducer = ...;
@@ -187,30 +182,33 @@ PORT=8080 npm run examples:01_minimal
 
 and open <http://localhost:8080> in your web browser.
 
-You can also try them in codesandbox.io:
-[01](https://codesandbox.io/s/github/dai-shi/react-hooks-global-state/tree/main/examples/01\_minimal)
-[02](https://codesandbox.io/s/github/dai-shi/react-hooks-global-state/tree/main/examples/02\_typescript)
-[03](https://codesandbox.io/s/github/dai-shi/react-hooks-global-state/tree/main/examples/03\_actions)
-[04](https://codesandbox.io/s/github/dai-shi/react-hooks-global-state/tree/main/examples/04\_fetch)
-[05](https://codesandbox.io/s/github/dai-shi/react-hooks-global-state/tree/main/examples/05\_onmount)
-[06](https://codesandbox.io/s/github/dai-shi/react-hooks-global-state/tree/main/examples/06\_reducer)
-[07](https://codesandbox.io/s/github/dai-shi/react-hooks-global-state/tree/main/examples/07\_middleware)
-[08](https://codesandbox.io/s/github/dai-shi/react-hooks-global-state/tree/main/examples/08\_thunk)
-[09](https://codesandbox.io/s/github/dai-shi/react-hooks-global-state/tree/main/examples/09\_comparison)
-[10](https://codesandbox.io/s/github/dai-shi/react-hooks-global-state/tree/main/examples/10\_immer)
-[11](https://codesandbox.io/s/github/dai-shi/react-hooks-global-state/tree/main/examples/11\_deep)
-[13](https://codesandbox.io/s/github/dai-shi/react-hooks-global-state/tree/main/examples/13\_persistence)
+## Migration from react-hooks-global-state
 
-## Blogs
+If you're migrating from the original `react-hooks-global-state` package, simply update your package.json and import statements:
 
-*   [TypeScript-aware React hooks for global state](https://blog.axlight.com/posts/typescript-aware-react-hooks-for-global-state/)
-*   [An alternative to React Redux by React Hooks API (For both JavaScript and TypeScript)](https://blog.axlight.com/posts/an-alternative-to-react-redux-by-react-hooks-api-for-both-javascript-and-typescript/)
-*   [Redux middleware compatible React Hooks library for easy global state management](https://blog.axlight.com/posts/redux-middleware-compatible-react-hooks-library-for-easy-global-state-management/)
-*   [React Hooks Tutorial on pure useReducer + useContext for global state like Redux and comparison with react-hooks-global-state](https://blog.axlight.com/posts/react-hooks-tutorial-for-pure-usereducer-usecontext-for-global-state-like-redux-and-comparison/)
-*   [Four patterns for global state with React hooks: Context or Redux](https://blog.axlight.com/posts/four-patterns-for-global-state-with-react-hooks-context-or-redux/)
-*   [Steps to Develop Global State for React With Hooks Without Context](https://blog.axlight.com/posts/steps-to-develop-global-state-for-react/)
+```bash
+npm uninstall react-hooks-global-state
+npm install react-hooks-global-state-next
+```
 
-## Community Wiki
+Then update your imports:
 
-*   [Persistence](https://github.com/dai-shi/react-hooks-global-state/wiki/Persistence)
-*   [Optional initialState](https://github.com/dai-shi/react-hooks-global-state/wiki/Optional-initialState)
+```javascript
+// Before
+import { createGlobalState } from 'react-hooks-global-state';
+
+// After  
+import { createGlobalState } from 'react-hooks-global-state-next';
+```
+
+## Changes from Original
+
+- ✅ Updated to Zustand v5.0.5 (from v4.0.0)
+- ✅ Maintained full backward compatibility
+- ✅ Continued maintenance and support
+
+## Original Project
+
+This project is based on [react-hooks-global-state](https://github.com/dai-shi/react-hooks-global-state) by [Daishi Kato](https://github.com/dai-shi). The original project is no longer maintained, but you can still find the original documentation and examples there.
+
+For more advanced use cases, consider using [Zustand](https://github.com/pmndrs/zustand) directly.

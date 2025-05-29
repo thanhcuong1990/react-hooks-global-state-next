@@ -1,7 +1,7 @@
 {
   "name": "react-hooks-global-state-next",
   "description": "Simple global state for React with Hooks API without Context API",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "author": "Cuong Lam <thanhcuong1990@gmail.com> (https://github.com/thanhcuong1990)",
   "repository": {
     "type": "git",

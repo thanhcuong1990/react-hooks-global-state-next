@@ -7,6 +7,10 @@
     "type": "git",
     "url": "https://github.com/thanhcuong1990/react-hooks-global-state-next.git"
   },
+  "homepage": "https://github.com/thanhcuong1990/react-hooks-global-state-next#readme",
+  "bugs": {
+    "url": "https://github.com/thanhcuong1990/react-hooks-global-state-next/issues"
+  },
   "source": "./src/index.ts",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.modern.js",

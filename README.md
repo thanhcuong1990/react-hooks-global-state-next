@@ -2,8 +2,15 @@
 
 **Note: This is a community-maintained fork of the original `react-hooks-global-state` package, which is no longer maintained. This version includes updated dependencies and continued support.**
 
-[![npm](https://img.shields.io/npm/v/react-hooks-global-state-next)](https://www.npmjs.com/package/react-hooks-global-state-next)
-[![size](https://img.shields.io/bundlephobia/minzip/react-hooks-global-state-next)](https://bundlephobia.com/result?p=react-hooks-global-state-next)
+[![npm version](https://img.shields.io/npm/v/react-hooks-global-state-next.svg)](https://www.npmjs.com/package/react-hooks-global-state-next)
+[![npm downloads](https://img.shields.io/npm/dm/react-hooks-global-state-next.svg)](https://www.npmjs.com/package/react-hooks-global-state-next)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/react-hooks-global-state-next.svg)](https://bundlephobia.com/result?p=react-hooks-global-state-next)
+[![license](https://img.shields.io/npm/l/react-hooks-global-state-next.svg)](https://github.com/thanhcuong1990/react-hooks-global-state-next/blob/main/LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
+[![GitHub issues](https://img.shields.io/github/issues/thanhcuong1990/react-hooks-global-state-next.svg)](https://github.com/thanhcuong1990/react-hooks-global-state-next/issues)
+[![GitHub stars](https://img.shields.io/github/stars/thanhcuong1990/react-hooks-global-state-next.svg)](https://github.com/thanhcuong1990/react-hooks-global-state-next/stargazers)
+
+📦 **[View on npm](https://www.npmjs.com/package/react-hooks-global-state-next)**
 
 Simple global state for React with Hooks API without Context API
 
